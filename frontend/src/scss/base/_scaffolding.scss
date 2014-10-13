@@ -1,0 +1,71 @@
+/*
+
+    Scaffolding
+
+ */
+
+
+section,
+.section {
+    position: relative;
+    background-color: $mc-light-grey;
+    /* padding-bottom: 44px; */
+
+    &.dark {
+        background-color: $mc-light-grey;   
+    }
+}
+
+.page{
+    padding: 22px 0px 44px;
+    background-color: #f2f2f2;
+
+
+}
+
+.coloured {
+    padding: 35px 0px 14px;
+    background-color: $mc-brand-colour;
+    text-align:center;
+    color:#fff;
+}
+
+.container {
+    padding: 0 $mc-size-5;
+}
+
+.pageSection {
+    margin-left: 0;
+    margin-right: 0;
+    //background-color: $brand-light-text;
+    padding: 22px 24px;
+    position: relative;
+
+    &.dark {
+        background-color: $mc-light-grey;   
+    }
+}
+
+.whiteSection {
+    margin-left: -24px;
+    margin-right: -24px;
+    background-color: $brand-light-text;
+    /* padding: 22px 34px; */
+    padding:0px;
+    padding-bottom: $mc-size-13;
+}
+
+.sectionWhite{
+    background-color:$white;
+}
+
+.user-activation-help-wrapper {
+    .input-help {
+        margin-top: 44px!important;
+    }
+}
+.reset-password-input-help-wrapper {
+    .input-help {
+        margin-top: 42px!important;
+    }
+}

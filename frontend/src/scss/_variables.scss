@@ -1,0 +1,189 @@
+/*
+
+    Override styles for tenant layout
+
+ */
+
+// Theme
+$mc-brand-colour: #333333;
+$mc-brand-secondary-colour:#00bcd6;
+$mc-btn-primary-colour:#409620;
+
+$mc-yellow: #ffbb33;
+$mc-yellow-dark: #ecd400;
+$mc-brand-orange: #f8981c;
+
+$mc-aqua: #00bcd6;
+$mc-dark-aqua: #0098AD;
+
+$mc-line:#cbcbcb;
+
+$mc-grey: #6d6e71;     
+$mc-light-grey: #f2f2f2;	 
+$mc-lighter-grey: #ebebeb;	
+$mc-dark-grey: #333333;    
+$mc-darker-grey-bold: #6e6d71; 
+$mc-box-shadow-grey: #dadada; 
+$border-grey: #3f3f3f;
+     
+$mc-oatmeal: #f6f4f0;
+$mc-oatmeal-darker: #e8e6e3;
+
+$mc-white: #fff;
+$mc-black:#000;
+
+$mc-red: #e31010;
+$mc-red-light: #fdf7f7;
+$mc-red-darker: #b70505;
+
+$mc-green: #158f05;
+$mc-green-light: #f8fdf7;
+
+$mc-disabled-color:#cccccc;
+$button-hover: #ffba32;
+$mc-secondary-gray: #666;
+
+$mc-footer-background-color:#344044;
+$mc-footer-text-color:#B7CFD8;
+
+
+$mc-size-1:  2.213933123px;
+$mc-size-2:  3.510794282px;
+$mc-size-3:  4.387814452px;
+$mc-size-4:  5.567321054px;
+$mc-size-5:  6.958075529px;
+$mc-size-6:  8.828504673px;
+$mc-size-7:  11.03392489px;
+$mc-size-8:  14px;
+$mc-size-9:  17.49729474px;
+$mc-size-10: 22.20081512px;
+$mc-size-11: 27.74672897px;
+$mc-size-12: 35.20544227px;
+$mc-size-13: 44px;
+$mc-size-14: 55.8278225px;
+$mc-size-15: 69.77399037px;
+$mc-size-16: 88.53022613px;
+$mc-size-17: 110.6456757px;
+$mc-size-22:136.645676px;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+$gray:                  $mc-grey;
+$gray-light:            $mc-light-grey;
+$gray-darker-bold:      $mc-darker-grey-bold;
+$gray-darker:           $mc-dark-grey;
+$gray-dark:             $mc-dark-grey;
+$gray-hover:			      $mc-lighter-grey;
+$white:					        $mc-white;
+$line-color:			      $mc-line;
+
+
+$brand-primary:         $mc-aqua;
+$brand-primary-darker:  $mc-dark-aqua;
+$brand-secondary:       $mc-yellow;
+$brand-secondary-darker:$mc-yellow-dark;
+$brand-light-text:      $mc-white;
+$brand-light-background:$mc-light-grey;
+
+$brand-error:           $mc-red;
+$brand-error-darker:    $mc-red-darker;
+$brand-error-light:     $mc-red-light;
+$brand-success:         $mc-green;
+$brand-success-light:   $mc-green-light;
+$brand-notify:          $mc-yellow;
+$brand-notify-light:    $mc-grey;
+
+$brand-bg:              $mc-oatmeal;
+$brand-bg-darker:       $mc-oatmeal-darker;
+$brand-disabled:		    $mc-disabled-color;
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+//
+// Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:        $mc-size-12;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             ((716px + $grid-gutter-width)) !default;
+// $container-tablet:             ((936px + $grid-gutter-width)) !default;
+// For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((936px + $grid-gutter-width)) !default;
+// For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((1160px )) !default;
+// $container-large-desktop:      ((936px + $grid-gutter-width)) !default;
+// For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
+// Typography
+
+$ratio :  1.58577250834; //85.6 / 53.98;
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
+
+// $font-size-base:          14px;
+// $font-size-large:         17.49729474px// ceil(($font-size-base * 1.25)); // ~18px
+// $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
+
+// $font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+// $font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+// $font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+// $font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+// $font-size-h5:            $font-size-base;
+// $font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+
+
+$font-size-base:          14px;
+$font-size-large:         ($font-size-base * 1.6); // ~18px
+$font-size-small:         ($font-size-base * 1); // ~10px
+
+$font-size-h1:            $ratio * $ratio * $font-size-base; // ~35.2px
+$font-size-h2:            $font-size-base * $ratio; // ~px
+$font-size-h3:            $font-size-base; // ~16px
+$font-size-h4:            $font-size-base; // ~16px
+$font-size-h5:            $font-size-base; // ~16px
+$font-size-h6:            $font-size-base; // ~16px
+$font-size-p:             $font-size-base; // ~16px
+
+$line-height-base:        1; // 1
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~10px
+
+$headings-font-family:    inherit;
+$headings-font-weight:    500;
+$headings-line-height:    1;
+$headings-color:          inherit;
+
+$font-primary-bold:         "Frutiger LT W01 65 Bold";
+$font-primary-regular:      "FrutigerLTW01-55Roman";
+$font-primary-light:        "FrutigerLTW01-45Light";
+
+$font-secondary-bold:       "DIN Next W01 Bold";
+$font-secondary-regular:    "DIN Next W01 Regular";
+$font-secondary-medium:     "DIN Next W01 Bold";
+$font-secondary-light:      "DIN Next W01 Light";
+
+$font-icons:       "EE";
+$dl-horizontal-offset: "";
+
+*{
+ font-family:$font-secondary-regular;
+}
+
+

@@ -1,0 +1,38 @@
+/*
+    Custom Mixins
+
+    font-smoothing: shortcut for adding webkit and firefox OSX font smoothing.
+
+ */
+
+
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+@mixin dotted-line($value, $color: $brand-light-text){
+
+    border-#{$value}: 1px dotted $color;
+
+}
+
+@mixin solid-line($value, $size ,  $color: $brand-light-text){
+
+    border-#{$value}: $size solid $color;
+
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(50%);
+}

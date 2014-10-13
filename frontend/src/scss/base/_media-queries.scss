@@ -1,0 +1,30 @@
+/*
+    Media Query mixins
+
+
+    at-least: shortcut for min-width
+
+    until: shortcut for max-width
+
+    from-to: shortcut for min and max width
+
+ */
+
+
+@mixin at-least($device-width) {
+    @media screen and (min-width: $device-width) {
+        @content;
+    }
+}
+
+@mixin until($device-width) {
+    @media screen and (max-width: $device-width) {
+        @content;
+    }
+}
+
+@mixin from-to($device-width-from, $device-width-to) {
+    @media screen and (min-width: $device-width-from) and (max-width: $device-width-to) {
+        @content;
+    }
+}

@@ -1,0 +1,160 @@
+/*
+
+    Icons
+
+*/
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: $font-icons;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: inherit;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a.icon-alone{
+	border-bottom: none;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.iconList{
+	list-style: none;
+	font-size: 20px;
+
+}
+
+.icon-Warningation:before {
+	content: "\e624";
+}
+.icon-notification:before {
+	content: "\e601";
+}
+.icon-VOIP:before {
+	content: "\e602";
+}
+.icon-Up:before {
+	content: "\e603";
+}
+.icon-Twitter:before {
+	content: "\e604";
+}
+.icon-Top:before {
+	content: "\e605";
+}
+.icon-TickBox:before {
+	content: "\e606";
+}
+.icon-Tick:before {
+	content: "\e607";
+}
+$icon-tick: "\e607";
+
+.icon-Texts:before {
+	content: "\e608";
+}
+.icon-Stop:before {
+	content: "\e609";
+}
+.icon-Search:before {
+	content: "\e60a";
+}
+.icon-Safety:before {
+	content: "\e60b";
+}
+.icon-Remove:before {
+	content: "\e60c";
+}
+.icon-Proccessing:before {
+	content: "\e60d";
+}
+.icon-Power:before {
+	content: "\e60e";
+}
+.icon-Play:before {
+	content: "\e60f";
+}
+.icon-Phone:before {
+	content: "\e610";
+}
+.icon-Pay:before {
+	content: "\e611";
+}
+.icon-Pause:before {
+	content: "\e612";
+}
+.icon-Outbox:before {
+	content: "\e613";
+}
+.icon-Network:before {
+	content: "\e614";
+}
+.icon-Login:before {
+	content: "\e615";
+}
+.icon-Inbox:before {
+	content: "\e616";
+}
+.icon-Home:before {
+	content: "\e617";
+}
+.icon-Forward:before {
+	content: "\e618";
+}
+$icon-forward: "\e618";
+.icon-Features:before {
+	content: "\e619";
+}
+.icon-Email:before {
+	content: "\e61a";
+}
+.icon-CrossCircle:before {
+	content: "\e61b";
+}
+.icon-Cross_16x16:before {
+	content: "\e61c";
+}
+.icon-Contactless:before {
+	content: "\e61d";
+}
+.icon-Contact:before {
+	content: "\e61e";
+}
+.icon-Chat:before {
+	content: "\e61f";
+}
+.icon-Bottom:before {
+	content: "\e620";
+}
+.icon-Back:before {
+	content: "\e621";
+}
+.icon-Add:before {
+	content: "\e622";
+}
+.icon-Down:before {
+	content: "\e623";
+}
+$icon-down: "\e623";
+.icon-WiFi:before {
+	content: "\e600";
+}
+.icon-d:before {
+	content: "\e700";
+}
+
+
+.instructions-icon{   
+
+    @include retina-sprite(instructions);
+    display:block;
+    float:left;
+    margin-top:0px;
+
+}
+   
